@@ -1,0 +1,47 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.storyMain{
+    width: 100%;
+    padding: 70px 180px;
+}
+
+.titleOfstory{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.storyPad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.greenBTn{
+    border-radius: 25px;
+    border: none;
+    padding: 15px 20px;
+    background-color: rgb(4, 155, 49);
+    color: #fff;
+    margin-right: 10px;
+    &:hover{
+        background-color: rgb(4, 105, 34);
+    }
+}
+.importBTn{
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #000;
+    padding: 15px 20px;
+    &:hover{
+        background-color: rgb(223, 221, 221);
+    }
+}
+.displayBtn{
+    display: flex;
+    flex-direction: row;
+}

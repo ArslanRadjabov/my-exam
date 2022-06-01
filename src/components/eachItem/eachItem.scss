@@ -1,0 +1,43 @@
+.EachDesc{
+    width: 100%;
+    padding-left: 80px;
+}
+
+.descMain{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc__header{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 0 50px ;
+}
+.desc__imgName{
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    p{
+        color: rgb(170, 170, 170);
+    }
+}
+.desc__text{
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+.desc__bigImg{
+    width: 100%;
+    height: 450px;
+}

@@ -1,0 +1,35 @@
+.note{
+    width: 100%;
+    margin-left: 100px;
+    text-align: left;
+    align-items: center;
+    padding: 50px 80px;
+}
+.displayFlex{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    p{
+        color: rgba(0, 0, 0, 0.589);
+        cursor: pointer;
+        &:hover{
+            color: #000;
+        }
+    }
+}
+.note__text{
+    font-weight: 900;
+}
+.hr{
+    margin: 20px 0;
+}
+.flexContent{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .link{
+        color: rgb(7, 134, 35);
+    }
+}
