@@ -1,0 +1,29 @@
+.com_header{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+        margin-right: 10px;
+        border-radius: 50%;
+        width: 10%;
+        height: 10%;
+    }
+}
+
+.com_main{
+    box-shadow: -1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    padding: 15px 20px;
+    width: 80%;
+
+}
+.com-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.reply{
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}

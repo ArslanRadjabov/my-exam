@@ -33,6 +33,9 @@ function Main() {
   let [menuItems, setMenuItems]= useState(data)
   let [type, setCategories]=useState(allCategories)
 
+  const [inputValue, SetInputValue] = useState([]);
+  const [isEmpty, setIsEmpty] = useState('');
+
   const filterItems = (type)=>{
       if(type==="All"){
           setMenuItems(data)
@@ -53,8 +56,8 @@ function Main() {
             <Route path='/' element={<HomeMain filterItems={filterItems} type={type} menuItems={menuItems}  arr ={arr} setArr={setArr}  />}/>
             <Route path='note' element={<Note/>}/>
             <Route  path='list' element={<Lists arr={arr} lists1={lists1} setlists1={setlists1}/>}/>
-            <Route  path='story' element={<Story/>}/>
-            <Route  path='writer' element={<WriteAdd/>}/>
+            <Route  path='story' element={<Story  empty={inputValue}/>}/>
+            <Route  path='writer' element={<WriteAdd inputValue={inputValue} SetInputValue={SetInputValue} isEmpty={isEmpty} setIsEmpty={setIsEmpty} />}/>
             <Route  path='each/:id' element={<EachItem/>}/>
             {/* <Route  path='login' element={<Login1/>}/> */}
         </Routes>

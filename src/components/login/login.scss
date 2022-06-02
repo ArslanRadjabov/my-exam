@@ -48,3 +48,35 @@
     color: #fff;
     background-color: #000;
 }
+
+
+@media screen and (max-width: 768px){
+    .InputTextCenter{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        // gap: 20px;
+        label{
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.616);
+        }
+        input{
+            margin: 0 auto;
+            width: 80%;
+            font-size: 20px;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .submitBtn{
+        margin: 20px auto;
+        width: 100%;
+        padding: 10px 25px;
+        color: #fff;
+        background-color: #000;
+    }
+}

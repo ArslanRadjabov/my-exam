@@ -28,7 +28,34 @@ export let data = [
     {
       comments: "Alcohol-conscious writer committed to helping individuals realize their true FULL potential. Top Medium Writer in Health, Life, and Addiction.",
       commenterImg: 'https://picsum.photos/id/99/100',
-      followers: '1k followers'
+      followers: 'followers',
+      reply:[{
+        
+      }],
+    },
+    {
+      comments: " committed to helping individuals realize their true FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+      commenterImg: 'https://picsum.photos/id/23/100',
+      followers: 'Felwer',
+      reply:[{
+        
+      }],
+    },
+    {
+      comments: "A individuals realize their true FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+      commenterImg: 'https://picsum.photos/id/12/100',
+      followers: '5k subscriber',
+      reply:[{
+        
+      }],
+    },
+    {
+      comments: "Alcohol-conscious writer committed to helping individuals realize their true FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+      commenterImg: 'https://picsum.photos/id/14/100',
+      followers: '1k followers',
+      reply:[{
+        
+      }],
     },
   ]
   },
@@ -55,7 +82,51 @@ export let data = [
     type: "Frontend",
     read: "5 min read",
     avatar: 'https://picsum.photos/id/63/100',
-    img: 'https://picsum.photos/id/75/100'
+    img: 'https://picsum.photos/id/75/100',
+
+
+    datamini:[
+      {
+        comments: "lorem ipsum dol amet in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/41/100',
+        followers: 'as safg',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: "lorem ipsum dol amet in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/32/100',
+        followers: 's asrse',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: "lorem ipsum dol amet in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/23/100',
+        followers: '1k reses',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: "lorem ipsum dol amet in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/12/100',
+        followers: 'asf fasf',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: "lorem ipsum dol amet in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: 'asf followers',
+        reply:[{
+          
+        }],
+      },
+    ]
 
   },
 
@@ -79,7 +150,42 @@ export let data = [
     type: "Python",
     read: "5 min read",
     avatar: 'https://picsum.photos/id/87/100',
-    img: 'https://picsum.photos/id/64/100'
+    img: 'https://picsum.photos/id/64/100',
+    datamini:[
+      {
+        comments: "assa hello uking huy lth, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/1/100',
+        followers: 'uber',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: "as, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/3/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: "assa hello asf huy lth, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/9/100',
+        followers: 'yres',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: "assa hello uking huy lth, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/65/100',
+        followers: 'burn',
+        reply:[{
+          
+        }],
+      },
+      
+    ]
 
   },
 
@@ -108,7 +214,42 @@ export let data = [
     type: "Frontend",
     read: "5 min read",
     avatar: 'https://picsum.photos/id/35/100',
-    img: 'https://picsum.photos/id/65/100'
+    img: 'https://picsum.photos/id/65/100',
+
+    datamini:[
+      {
+        comments: " FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/75/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: " FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/56/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: " FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/12/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: " FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+    ]
 
   },
 
@@ -132,6 +273,40 @@ export let data = [
     avatar: 'https://picsum.photos/id/65/100',
     img: 'https://picsum.photos/id/66/100',
 
+    datamini:[
+      {
+        comments: " Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: " Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: " Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+      {
+        comments: " Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+    ]
   },
 
   {
@@ -152,8 +327,19 @@ export let data = [
     type: "Python",
     read: "5 min read",
     avatar: 'https://picsum.photos/id/95/100',
-    img: 'https://picsum.photos/id/56/100'
+    img: 'https://picsum.photos/id/56/100',
 
+
+    datamini:[
+      {
+        comments: "Alcohol-conscious writer committed to helping individuals realize their true FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+    ]
   },
 
   {
@@ -178,7 +364,18 @@ export let data = [
     type: "Js",
     read: "5 min read",
     avatar: 'https://picsum.photos/id/66/100',
-    img: 'https://picsum.photos/id/14/100'
+    img: 'https://picsum.photos/id/14/100',
+
+    datamini:[
+      {
+        comments: "Alcohol-conscious writer committed to helping individuals realize their true FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+    ]
 
   },
 
@@ -208,7 +405,17 @@ export let data = [
     type: "Js",
     read: "5 min read",
     avatar: 'https://picsum.photos/id/55/100',
-    img: 'https://picsum.photos/id/44/100'
+    img: 'https://picsum.photos/id/44/100',
+    datamini:[
+      {
+        comments: "Alcohol-conscious writer committed to helping individuals realize their true FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+    ]
 
   },
 
@@ -224,6 +431,16 @@ export let data = [
     type: 'Java',
     read: "5 min read",
     avatar: 'https://picsum.photos/id/12/100',
-    img: 'https://picsum.photos/id/70/100'
+    img: 'https://picsum.photos/id/70/100',
+    datamini:[
+      {
+        comments: "conscious writer committed to helping individuals realize their true FULL potential. Top Medium Writer in Health, Life, and Addiction.",
+        commenterImg: 'https://picsum.photos/id/99/100',
+        followers: '1k followers',
+        reply:[{
+          
+        }],
+      },
+    ]
   },
 ]

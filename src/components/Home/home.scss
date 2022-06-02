@@ -13,7 +13,7 @@
 }
 .dataInside{
     padding: 20px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.562);
+    border-top: 1px solid rgba(0, 0, 0, 0.315);
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,6 @@
 
 }
 .post-img{
-
     width: 100px;
     height: 100px;
 }
@@ -88,4 +87,25 @@
     // right: -390px;
     // top: -80px;
     padding: 0 10px;
+}
+
+
+
+@media screen  and (max-width: 768px){
+    .dataMain{
+        padding: 0 15px;
+        width: 100%;
+    }
+    .post-img{
+        width: 100px;
+        height: 100px;
+    }
+    .user_text{
+        display: none;
+    }
+   .post-footer .post-category{
+    background-color: #fff;
+    padding: 3px;
+    margin: 0;
+}
 }

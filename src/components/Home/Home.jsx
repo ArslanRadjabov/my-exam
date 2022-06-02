@@ -9,6 +9,8 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { Link } from 'react-router-dom';
 import FilterBtn from './filterBtn';
 import ButtonToggle from './buttonToggle';
+import BasicMenu from './menuBar';
+import MapEmpty from '../storie/MapEmpty';
 function HomeMain(props) {
 
   let ClickerSaver=(user)=>{
@@ -16,7 +18,6 @@ function HomeMain(props) {
     props.setArr([...props.arr, user])  
     console.log(props.arr);
   }
-
   return (
     <div className='dataMain'>
       <FilterBtn
@@ -29,7 +30,9 @@ function HomeMain(props) {
       <p>Keep up with the latest in any topic</p>
      </div>
     {
+      
       props.menuItems.map(user =>{
+        
         if (true) {
           return(
             <>
@@ -43,7 +46,7 @@ function HomeMain(props) {
               <div className='post-main'>
                 <div className='post-desc'>
                 <h2 className='post-title'>{user.title}</h2>
-                <p>{user.text}</p>                  
+                <p className='user_text'>{user.text}</p>                  
                 </div>
                 <div>
                   <img className='post-img' src={user.img} alt="imgPost" />
@@ -56,7 +59,7 @@ function HomeMain(props) {
                 <p className='post-readTime'>{user.read} .</p>
                 </div>
                 <div className='post-footer-row'>
-                <ButtonToggle user={user}  ClickerSaver={ClickerSaver}/>      
+                <BasicMenu user={user} ClickerSaver={ClickerSaver}/>
                 </div>
               </div>
             </div>

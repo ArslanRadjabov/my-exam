@@ -4,7 +4,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { data } from '../data';
 import Drewer from '../drewer/drewer';
-
+// import LikeCommentsInPost from '../LikeCommentsInPost/LikeCommentsInPost'
 function EachItem() {
 
 const location=useLocation()
@@ -13,6 +13,9 @@ let location1 = location.pathname.split('/').at(-1);
 
 return (
 <div className='EachDesc'>
+    {/* data.map(item => {
+
+    }) */}
     {
     data.map(el => {
     if(+location1 === el.id){
@@ -43,7 +46,8 @@ return (
                 aspernatur ut accusamus eaque illum architecto amet quisquam cum officia assumenda modi inventore ipsa
                 laborum perspiciatis!</p>
 
-            <Drewer/>
+           
+            <Drewer elem={el.datamini}/>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem laboriosam suscipit dolor vero earum.
                 Laboriosam sit minima dolorum itaque, vero ex quasi ipsam excepturi harum tempora iste accusantium
                 praesentium dolorem.</p>

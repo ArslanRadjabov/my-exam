@@ -6,15 +6,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import avatarka from '../../imgs/avatar.jpg'
 
+let count = 200;
 
+function WriteAdd({inputValue, SetInputValue,isEmpty, setIsEmpty}){
+  const onChangeHandler1 = (e) => {
+    setIsEmpty(e.target.value);
+    // console.log(inputVal);
+};
 
-function WriteAdd() {
+  const publishHandler=()=>{
+    SetInputValue([
+      ...inputValue,{
+      text: isEmpty,
+      id: count 
+      } 
+    ])
+    setIsEmpty('')
+    count++
+  }
 
   let [inputVal, setInutVal] = useState("");
-  const onChangeHandler1 = (e) => {
-        setInutVal(e.target.value);
-        console.log(inputVal);
-  };
+  
   return (
     <div className='writeMain'>
       <div className='header-pro'>
@@ -22,7 +34,7 @@ function WriteAdd() {
       <p>Drafts in arslonradjabovblog</p>
       </div>
       <div className='row-publish'>
-        <button className='publish'>Publish</button>
+        <button onClick={publishHandler} className='publish'>Publish</button>
         <Link  className='icons' to={'/note'}><FontAwesomeIcon icon={faBell}/></Link>
         <div>
             <img className='avatar' src={avatarka} alt="" />
@@ -32,9 +44,14 @@ function WriteAdd() {
       
       </div>
       <div className='inputs_sec'>
-        <input onChangeHandler={onChangeHandler1} className='InputTitle' type="text" placeholder='Title' />
+        <input  className='InputTitle'   type="text" placeholder='Title' />
         <div>
-          <textarea  className='textare' id="" cols="70" rows="10" onKeyUp={(e) => console.log(e.target.value)} placeholder='Tell your story...'></textarea>
+          <textarea onChange={onChangeHandler1}   value={isEmpty}  className='textare' id
+          
+          ="" cols="70"  rows="10" onKeyUp={(e) => console.log(e.target.value)} placeholder='Tell your story...'></textarea>
+
+         
+
         </div>
       </div>
     </div>

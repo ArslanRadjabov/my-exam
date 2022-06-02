@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './drewer.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment, faEllipsis } from '@fortawesome/free-solid-svg-icons'
@@ -9,19 +9,37 @@ import avatarka2 from '../../imgs/avatarka2.jpg'
 import 'react-modern-drawer/dist/index.css'
 import DataMini from '../eachItem/dataMini'
 import LikeCounter from './likeCounter'
-import Comments from '../comments/comments'
+import Comment from './Comment'
 
-const Drewer = () => {
+const Drewer = ({elem}) => {
     const [isOpen, setIsOpen] = React.useState(false)
     const toggleDrawer = () => {
         setIsOpen((prevState) => !prevState)
+    }
+
+    const [getinputValue, SetValue] = useState(null);
+
+    const getElement=(e)=>{
+        SetValue({
+            comments: e.target.value,
+            commenterImg: 'https://picsum.photos/id/99/100',
+            followers: '1k followers'
+        })
+
+    }
+
+    let commentRef = useRef(null)
+    const clickedFunc=()=>{
+        elem.push(getinputValue)
+        console.log(getinputValue);
+        SetValue(null)
+        commentRef.current.value=''
     }
 
     return (
         <>
         <div className='comment_section'>
             <LikeCounter/>
-           
             <button className='btnComment' onClick={toggleDrawer}><FontAwesomeIcon icon={faComment}/>186</button>
             <button className='btnComment'><FontAwesomeIcon icon={faEllipsis}/></button>
             <Drawer open={isOpen} onClose={toggleDrawer} direction='right'>
@@ -31,21 +49,36 @@ const Drewer = () => {
                             <img className='avatar_img' src={avatarka2} alt="avatarka" />
                             <h3 className='titleOfsender'>Arslon Radjabov</h3>
                         </div>
-                        <textarea className='inputarea'  placeholder='What are your thoughts' id="" cols="30" rows="5"></textarea>
+
+
+                        <textarea ref={commentRef} onChange={getElement} className='inputarea'  placeholder='What are your thoughts' id="" cols="30" rows="5"></textarea>
+
+
                         <div className='sendBtnFlex' >
                         <div className='Btnsends'>
-                        <button className='cancel'>cencel</button>
-                        <button className='send'>send</button>
+                        <button onClick={()=>commentRef.current.value=''} className='cancel'>cencel</button>
+                        <button onClick={clickedFunc} className='send'>send</button>
                         </div>
                         <div>
                             <button className='fontBtn Bold'>B</button>
                             <button className='fontBtn cursive'><i>i</i></button>
                         </div>
                         
+                       
                         
                         </div>
+                        
                     </div>
-                        <Comments/>
+                    <ul>
+                            {
+                                elem.map(item=>{
+                                    return (
+                                        <Comment  item={item}/>
+                                    )
+                                })
+                            }
+                        </ul>
+
                 </div>
             </Drawer>
             </div>
